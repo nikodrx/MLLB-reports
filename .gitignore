@@ -1,0 +1,26 @@
+# Patient data: never upload the raw clinical database
+machine-learning/data/raw/*
+!machine-learning/data/raw/.gitkeep
+*.xlsx
+!machine-learning/data/processed/.gitkeep
+
+# Large deep learning datasets and model weights
+deep-learning/data/*
+!deep-learning/data/.gitkeep
+*.h5
+*.pt
+*.pth
+*.keras
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
