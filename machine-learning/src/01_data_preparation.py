@@ -21,9 +21,9 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-RAW_FILE = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("machine-learning/data/raw/Info_BDApnea_QuironMalaga.xlsx")
-OUT_DIR = Path(__file__).resolve().parents[1] / "data" / "processed"
-OUT_DIR.mkdir(parents=True, exist_ok=True)
+ML_DIR = Path(__file__).resolve().parents[1]   # .../machine-learning
+RAW_FILE = Path(sys.argv[1]) if len(sys.argv) > 1 else ML_DIR / "data" / "raw" / "Info_BDApnea_QuironMalaga.xlsx"
+OUT_DIR = ML_DIR / "data" / "processed"
 
 # Thresholds used in class (slide 19)
 HEALTHY_MAX_IAH = 10   # IAH <= 10  -> Healthy
