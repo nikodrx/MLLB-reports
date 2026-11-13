@@ -1,0 +1,9 @@
+,,MAE,MAE,RMSE,RMSE,R2,R2
+,,mean,std,mean,std,mean,std
+Model,Method,,,,,,
+Baseline (mean),Bootstrap (200 out-of-bag sets),14.504,0.526,18.506,0.978,-0.008,0.015
+Baseline (mean),Repeated CV (25 test folds),14.51,0.613,18.544,1.272,-0.001,0.001
+Linear regression (IAH),Bootstrap (200 out-of-bag sets),12.494,0.52,16.541,0.883,0.194,0.044
+Linear regression (IAH),Repeated CV (25 test folds),12.407,0.638,16.434,1.072,0.212,0.051
+SVR (IAH),Bootstrap (200 out-of-bag sets),12.058,0.592,16.81,1.068,0.168,0.044
+SVR (IAH),Repeated CV (25 test folds),11.967,0.632,16.858,1.215,0.171,0.059
